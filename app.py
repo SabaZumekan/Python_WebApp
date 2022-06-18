@@ -48,10 +48,12 @@ def try_rest():
 
 @app.route('/practice_rest', methods=['POST'])
 def practice_rest():
-    req_json = request.get_json()
+    request_json = request.get_json()
     print(request_json)
-    friend = req_json['friends']
-    for array_friend in friend
+    print(type(request_json))
+    friends = request_json['friends']
+    print(friends)
+    for array_friend in friends
         print(array_friend)
     
     response_json2 = {"response_json": request_json}
