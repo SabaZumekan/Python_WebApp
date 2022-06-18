@@ -31,5 +31,5 @@ def exercise_html():
     return render_template('exercise.html')
 
 @app.route('/exercise')
-def exercise(my_name):
-    return my_name
+def exercise():
+    return f'exercise:{request.args.get("my_name")'
