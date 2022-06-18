@@ -45,3 +45,7 @@ def try_rest():
     print(name)
     response_json = {"response_json": request_json}
     return jsonify(response_json)
+
+@app.route('practice_rest' methods=['POST'])
+def practice_rest():
+    req_json = request.get_json() 
