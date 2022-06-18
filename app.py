@@ -18,4 +18,5 @@ def test_request():
 
 @app.route('/practice/<user_input>')
 def practice(user_input):
-    return f'practice:{request.args.get("user_input")}'
+    input =   request.args.get("user_input")
+    return input
