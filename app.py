@@ -17,5 +17,5 @@ def test_request():
     return f'test_request:{request.args.get("dummy")}'
 
 @app.route('/practice_request/<user_input>')
-def practice_request(user_imput):
-    return f'practice_request:{request.args.get("user_imput")}'
+def practice_request(user_input):
+    return f'practice_request:{request.args.get("user_input")}'
