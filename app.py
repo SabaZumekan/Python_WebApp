@@ -27,5 +27,5 @@ def show_html():
     return render_template('test_html.html')
 
 @app.route('/exercise_html')
-def show_html():
+def exercise_html():
     return render_template('exercise.html')
