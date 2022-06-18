@@ -32,4 +32,4 @@ def exercise_html():
 
 @app.route('/exercise')
 def exercise():
-    return f'exercise:{request.args.get("my_name")'
+    return 'exercise:{request.args.get("my_name")'
