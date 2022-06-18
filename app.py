@@ -33,7 +33,7 @@ def exercise_html():
 
 @app.route('/exercise')
 def exercise():
-    return f'exercise:{request.args.get("my_name")}'
+    return f'name:{request.args.get("my_name")}'
 
 @app.route('/try_rest', methods=['POST'])
 def try_rest():
