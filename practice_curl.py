@@ -21,4 +21,4 @@ response_json = response.json()
 response_json['response_json']['friends']
 
 for friend in friends:
-    print friend
+    print (friend)
