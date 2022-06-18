@@ -50,8 +50,8 @@ def try_rest():
 def practice_rest():
     req_json = request.get_json()
     friend = req_json['friends']
-    for friends in friend
-        print(friends)
+    for array_friend in friend
+        print(array_friend)
     
     response_json2 = {"response_json": request_json}
     return jsonify(response_json)
