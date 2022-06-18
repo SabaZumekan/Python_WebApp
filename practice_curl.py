@@ -16,4 +16,4 @@ json_data = {
     'is_man': False,
 }
 
-response_json = requests.post('http://127.0.0.1:5000/try_rest', headers=headers, json=json_data)
+response = requests.post('http://127.0.0.1:5000/try_rest', headers=headers, json=json_data)
