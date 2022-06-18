@@ -1,5 +1,6 @@
 from flask import Flask
 from flask import Flask, request
+from flask import templates
 
 app = Flask(__name__)
 
@@ -19,3 +20,8 @@ def test_request():
 @app.route('/practice/<user_input>')
 def practice(user_input):
     return user_input
+
+
+@app.route('/show_html')
+def show_html():
+    return render_template('test_html.html')
