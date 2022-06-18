@@ -46,6 +46,12 @@ def try_rest():
     response_json = {"response_json": request_json}
     return jsonify(response_json)
 
-@app.route('practice_rest' methods=['POST'])
+@app.route('/practice_rest' methods=['POST'])
 def practice_rest():
-    req_json = request.get_json() 
+    req_json = request.get_json()
+    friend = req_json['friends']
+    for friends in friend
+        print(friends)
+    
+    response_json2 = {"response_json": request_json}
+    return jsonify(response_json)
