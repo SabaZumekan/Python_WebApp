@@ -35,6 +35,7 @@ def exercise_html():
 def exercise():
     return f'name:{request.args.get("my_name")}'
 
+"""
 @app.route('/try_rest', methods=['POST'])
 def try_rest():
     # リクエストデータをJSONとして受け取る
@@ -45,8 +46,8 @@ def try_rest():
     print(name)
     response_json = {"response_json": request_json}
     return jsonify(response_json)
-
 """
+
 @app.route('/practice_rest', methods=['POST'])
 def practice_rest():
     request_json = request.get_json()
@@ -59,5 +60,3 @@ def practice_rest():
     
     response_json = response.json()
     response_json['response_json']['friends']
-
-"""
