@@ -52,11 +52,8 @@ def try_rest():
 def practice_rest():
     request_json = request.get_json()
     print(request_json)
-    print(type(request_json))
     friends = request_json['friends']
     print(friends)
     for array_friend in friends:
         print(array_friend)
     
-    response_json = response.json()
-    response_json['response_json']['friends']
