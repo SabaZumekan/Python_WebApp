@@ -29,3 +29,7 @@ def show_html():
 @app.route('/exercise_html')
 def exercise_html():
     return render_template('exercise.html')
+
+@app.route('/exercise')
+def exercise(my_name):
+    return my_name
