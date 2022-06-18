@@ -50,10 +50,13 @@ def try_rest():
 
 @app.route('/practice_rest', methods=['POST'])
 def practice_rest():
+    data ={
+        "name": who,
+        "age": 25,
+        "friends": ["aaa","bbb","cccc"],
+        'is_man':False,
+    }
     request_json = request.get_json()
     print(request_json)
-    friends = request_json['friends']
-    print(friends)
-    for array_friend in friends:
-        print(array_friend)
-    
+    response_json = {"response_json" :request_json} 
+    return jsonify(response_json)
