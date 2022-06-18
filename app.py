@@ -25,3 +25,7 @@ def practice(user_input):
 @app.route('/show_html')
 def show_html():
     return render_template('test_html.html')
+
+@app.route('/exercise_html')
+def show_html():
+    return render_template('exercise.html')
