@@ -19,3 +19,6 @@ json_data = {
 response = requests.post('http://127.0.0.1:5000/try_rest', headers=headers, json=json_data)
 response_json = response.json()
 response_json['response_json']['friends']
+
+for friend in friends:
+    print friend
