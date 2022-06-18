@@ -53,7 +53,7 @@ def practice_rest():
     print(type(request_json))
     friends = request_json['friends']
     print(friends)
-    for array_friend in friends
+    for array_friend in friends:
         print(array_friend)
     
     response_json2 = {"response_json": request_json}
