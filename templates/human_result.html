@@ -4,18 +4,37 @@
         <title>検索結果表示用ファイル</title>
     </head>
     <body>
-            サイズが{{search_size}}以上の人<br>
+            サイズが{{search_weight}}以上の人<br>
             <table border="1">
                 <tr>
                     <th>id</th>
                     <th>name</th>
-                    <th>size</th>
+                    <th>weight</th>
+                    <th>height</th>
                 </tr>
-                {% for person in persons %}
+                {% for human in humans %}
                 <tr>
-                    <td>{{person.id}}</td>
-                    <td>{{person.name}}</td>
-                    <td>{{person.size}}</td>
+                    <td>{{human.id}}</td>
+                    <td>{{human.name}}</td>
+                    <td>{{human.weight}}</td>
+                    <td>{{human.height}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+            サイズが{{search_height}}以上の人<br>
+            <table border="1">
+                <tr>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>weight</th>
+                    <th>height</th>
+                </tr>
+                {% for human in humans %}
+                <tr>
+                    <td>{{human.id}}</td>
+                    <td>{{human.name}}</td>
+                    <td>{{human.weight}}</td>
+                    <td>{{human.height}}</td>
                 </tr>
                 {% endfor %}
             </table>
