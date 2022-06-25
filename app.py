@@ -6,7 +6,6 @@ from flask import jsonify
 
 #webアプリとの連携
 from flask_sqlalchemy import SQLAlchemy
-from jmespath import search
 from test_model import Person
 
 app = Flask(__name__)
