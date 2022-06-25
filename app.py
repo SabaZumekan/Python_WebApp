@@ -58,7 +58,7 @@ def try_rest():
 
 @app.route('/person_search')
 def person_search():
-    return render_template('./person search.html')
+    return render_template('./person_search.html')
 
 @app.route('/person_reault')
 def person_result():
