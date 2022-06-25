@@ -6,7 +6,6 @@ from flask import jsonify
 
 #webアプリとの連携
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy import or_
 from test_model import Person
 from test_model import Human
 
