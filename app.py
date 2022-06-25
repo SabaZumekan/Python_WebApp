@@ -60,7 +60,7 @@ def try_rest():
 def person_search():
     return render_template('./person_search.html')
 
-@app.route('/person_reault')
+@app.route('/person_result')
 def person_result():
     search_size = request.args.get("search_size")
     persons = db.session.query(Person).filter(Person.size > search_size)
