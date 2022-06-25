@@ -8,6 +8,7 @@ from flask import jsonify
 from flask_sqlalchemy import SQLAlchemy
 from test_model import Person
 from test_model import Human
+from sqlalchemy import or_
 
 app = Flask(__name__)
 #webアプリとの連携 06/25
@@ -67,11 +68,11 @@ def person_result():
     persons = db.session.query(Person).filter(Person.size > search_size)
     return render_template('./person_result.html',persons=persons,search_size=search_size)
 
-@app.route('./human_search')
+@app.route('/human_search')
 def human_search():
     return render_template('./human_search.html')
 
-@app.route('./human_result')
+@app.route('/human_result')
 def human_result():
     search_weight = request.args.get("search_weight")
     search_height = request.args.get("search_height")
